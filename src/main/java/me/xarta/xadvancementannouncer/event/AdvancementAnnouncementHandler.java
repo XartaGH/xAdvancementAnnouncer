@@ -32,6 +32,11 @@ public class AdvancementAnnouncementHandler {
             case GOAL -> ConfigHandler.GOAL_FORMAT.get();
         };
 
+        // If format is null, empty, or blank, don't announce
+        if (format.isBlank()) {
+            return;
+        }
+
         String playerName = player.getName().getString();
 
         // Get the translatable title component (not converted to string yet)
