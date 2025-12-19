@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "me.xarta.xadvancementannouncer.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "xadvancementannouncer.refmap.json",
+  "mixins": [
+    "DisplayInfoMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
