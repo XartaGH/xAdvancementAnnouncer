@@ -15,14 +15,17 @@ public class ConfigHandler {
         BUILDER.comment("Use %player% for player name and %advancement%/%challenge%/%goal% for advancement title",
                 "Color codes: &0-9, &a-f for colors, &l for bold, &o for italic, &r for reset");
 
+        // Add advancement-format value to config
         ADVANCEMENT_FORMAT = BUILDER
                 .comment("Format for regular task advancements")
                 .define("advancement-format", "&a%player% &7achieved advancement &a%advancement%");
 
+        // Add challenge-format value to config
         CHALLENGE_FORMAT = BUILDER
                 .comment("Format for challenge advancements")
                 .define("challenge-format", "&5%player% &7completed challenge &5%challenge%");
 
+        // Add goal-format value to config
         GOAL_FORMAT = BUILDER
                 .comment("Format for goal advancements")
                 .define("goal-format", "&e%player% &7reached goal &e%goal%");
