@@ -26,6 +26,7 @@ public class XAdvancementAnnouncer {
         );
 
         NeoForge.EVENT_BUS.register(new AdvancementAnnouncementHandler()); // Register event handler
+        
         LOGGER.info("xAdvancementAnnouncer is on."); // Print success message
     }
 }
